@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Vertiefung: Loops Lev I</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Wortfilter</h1>
+    <form>
+      <div>
+        <input
+          type="text"
+          id="wordInput"
+          placeholder="Neues Wort Hinzufügen:"
+        />
+        <input type="button" value="Hinzufügen" onclick="wordAdd()" />
+      </div>
+      <div>
+        <input type="text" id="numberInput" placeholder="Wortlänge" />
+        <input type="button" value="Filtern" onclick="wordFilter()" />
+      </div>
+    </form>
+    <p id="wordsOutput"></p>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
